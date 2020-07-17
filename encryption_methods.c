@@ -37,7 +37,7 @@ int main(){
 		
 	}
 	
-	printf("%s",sentence);
+	printf("Message:%s",sentence);
 	
 	int len=strlen(sentence);
 	
@@ -73,7 +73,7 @@ int main(){
 		
 	}	
 	
-	printf("\n%s",sentence);
+	printf("\nEncrypted message:%s",sentence);
 	
 
 	
