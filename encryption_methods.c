@@ -3,7 +3,7 @@
 #define size 100
 
 //Encode the program written on the screen by encrypting the sentence until the dot (.) 
-//Is typed on the keyboard. As an encryption basis, one of the oldest encryption methods, ìshifting each letter by a certain amountî, has been taken as basis. 
+//Is typed on the keyboard. As an encryption basis, one of the oldest encryption methods, ‚Äúshifting each letter by a certain amount‚Äù, has been taken as basis. 
 //According to this; The amount of translation, which is entered from the keyboard, will be replaced by 3 letters from each letter when 3 is selected. 
 //In other words, all A's are denoted by D, and all K's are denoted by the letter N. 
 //When translated, the letters that pass the last letter are returned to the beginning and continue from there. 
@@ -43,30 +43,30 @@ int main(){
 	
 	int j,k,l;
 	for(j=0;j<len;j++){
-		for(k=0;k<26;k++){
-			for(l=0;l<2;l++){
+	  for(k=0;k<26;k++){
+		for(l=0;l<2;l++){
 				
-				while(sentence[j]==letters[k][l]){
+		   while(sentence[j]==letters[k][l]){
 					
-					if(k<26-x){
+			if(k<26-x){
 						
-						sentence[j]=letters[k+x][l];
-						j++;
+			 sentence[j]=letters[k+x][l];
+			 j++;
 						
 						
-						
+		         }
 					
-					}
-					else{
-						int a=25-k;
-						sentence[j]=letters[x-a-1][l];
-					    j++;
-					    
+			 else{
 						
-					}
-					k=-1;
-					break;	
-				}
+			   int a=25-k;
+			   sentence[j]=letters[x-a-1][l];
+			   j++;
+					    	
+			  }
+			   
+			k=-1;
+			break;	
+		             }
 				
 			}
 		}
